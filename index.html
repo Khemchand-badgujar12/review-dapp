@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Immutable Trust – Review DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>Immutable Trust</h1>
+    <p>Blockchain Based Feedback & Review System</p>
+    <button id="connectBtn" class="btn">Connect MetaMask</button>
+    <p id="wallet"></p>
+  </header>
+
+  <section class="card">
+    <h2>Submit Review</h2>
+
+    <input id="productId" placeholder="Product ID">
+    <input id="rating" type="number" min="1" max="5" placeholder="Rating (1–5)">
+    <textarea id="review" placeholder="Write your review"></textarea>
+
+    <button id="submitBtn" class="btn-primary">Submit Review</button>
+  </section>
+
+  <section class="card">
+    <h2>All Reviews</h2>
+    <div id="reviews"></div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
